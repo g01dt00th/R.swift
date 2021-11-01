@@ -25,7 +25,7 @@ extension Struct {
         isStatic: true,
         name: "applicationLocale",
         typeDefinition: .inferred(Type._Locale),
-        value: "hostingBundle.preferredLocalizations.first.flatMap { Locale(identifier: $0) } ?? Locale.current")
+        value: "Locale.current")
     ]
 
     let internalClasses = [
